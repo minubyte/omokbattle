@@ -59,7 +59,7 @@ class Board:
     def move(self):
         side = self.step%2
         x, y = self.bots[side].move(self)
-        self.make_move(x, y, side)
+        self.make_move(x, y, side+1)
         self.step += 1
 
 board = Board()
